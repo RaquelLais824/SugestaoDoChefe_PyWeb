@@ -24,11 +24,5 @@ def main():
 
     ])
 
-<<<<<<< Updated upstream
-text = textarea('Pesquisar receita', rows=3, placeholder='Nome da Receita')
-put_text('text = %r' % text)
-=======
-
-
 start_server(main, port=8080, debug=True)
->>>>>>> Stashed changes
+
