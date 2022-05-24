@@ -8,7 +8,5 @@ put_text('Precisando daquela sugestão do chefe? Encontre as melhores receitas a
     'color: black; font-size:25px; margin-top:30px; margin-bottom:30px');
 
 
-text = textarea('Pesquisar receita', rows=3, placeholder='Some text')
+text = textarea('Pesquisar receita', rows=3, placeholder='Nome da Receita')
 put_text('text = %r' % text)
-
-
