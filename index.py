@@ -48,13 +48,12 @@ def main():
     df_new = df1[['description', 'ingredients', 'name']]
     pesquisa = df_new[df_new.name.eq(text)]
 
-
+    csv = pesquisa.to_csv(index=False)
+    put_file('receita.txt', csv.encode(), 'Baixar receita')
 
     put_table([[pesquisa]]).style(
         'color: #025D00; margin-bottom:30px');
 
-    csv = pesquisa.to_csv(index=False)
-    put_file("Baixar receita", csv.encode())
 
 
     put_table([['Nome receita', 'Ingredientes'], [receitas_recomendadas[['name']], receitas_recomendadas[['ingredients']]]]),
